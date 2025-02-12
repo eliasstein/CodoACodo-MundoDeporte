@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
-
-    <title>Mundo deportes login</title>
+    <title>Mundo deportes profile</title>
 </head>
 <body>
     <header>
         <!--Header container-->
         <div class="container">
             <!--User Login-->
-            <a class="login-register" href="">
+            <a class="login-register" href="login.html">
                 <img src="../static/img/user.png" width="20px" height="20px">
                 <span></span>
             </a> 
@@ -24,7 +23,7 @@
                 Carrito
             </a>
             <!--Nav Menu-->
-            <nav class="nav-menu"> 
+            <nav class="nav-menu">
                 <ul class="nav-menu-ul">
                     <li class="header-element">
                         <a href="">Ropa Deportiva</a>
@@ -42,46 +41,45 @@
             </nav>
         </div>
     </header>
-    <!--Body-->
-    <section class="login-container">
-        <form class="login-form">
-            <h1 class="login-title">Login</h1>
-            <div class="login-data-container">
+    <main>
+        <div class="profile-frame">
+            <div class="profile-frame-container">
+                <img src="../static/img/user.png" width="200px" height="200px" class="pfp">
                 <div>
-                    <label for="uname">
-                        <b>Correo electronico: </b>
-                    </label>
-                    <input type="email" placeholder="jhondoe@gmail.com" name="uname" id="uname"required>
-                </div>
-                <div>
-                    <label for="pass">
-                        <b>Contraseña: </b>
-                    </label>
-                    <input type="password" placeholder="Contraseña" name="pass" id="pass" required>
-                </div>
-                <div style="margin-top: 2%;">
-                    <a href="register.html">¿No tienes una cuenta?</a>
+                    <div class="profile-data">
+                        <h1 class="pf-name">Nombre:</h1>
+                        <input type="text">
+                        <button>Cambiar</button>
+                    </div>
+                    <div class="profile-data">
+                        <h1 class="pf-email">Email:</h1>
+                        <input type="text">
+                        <button>Cambiar</button>
+                    </div>
+                    <div class="profile-data">
+                        <h1>Contraseña: ********</h1>
+                        <input type="text">
+                        <button>Cambiar</button>
+                    </div> 
+                    <div style="text-align: center; margin-top: 50px;">
+                        <button onclick="logout()">Cerrar sesion</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="submit-container">
-                <input type="submit" value="INGRESAR" id="login-btn">
-            </div>
-            <label>
-                <input class="remember-password" type="checkbox" checked="checked" name="remember" style="margin-left: 10%;"> Recordar contraseña
-            </label>
-            <div>
-                <a href="" style="margin-left: 10%;">¿Has olvidado tu contraseña?</a>
-            </div>
-        </form>
-    </section>
+        </div>
+    </main>
 
     <footer>
         <div class="footer">
             <p>Esta pagina ha sido creada con propositos educativos y las imagenes fueron tomadas de diversas paginas por lo tanto creditos a sus respectivos autores</p>
         </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../static/js/user.js"></script>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/user.js"></script>
+
+
 </body>
 </html>

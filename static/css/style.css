@@ -147,7 +147,7 @@ margin:0 0 0 0;
 }
 /* ******************************Login page****************************** */
 /* Creamos el contenedor del formulario */
-.login-form{
+.login-form, .register-form{
     padding-bottom: 5%;
     margin-left: 25%;
     margin-right: 25%;
@@ -283,6 +283,20 @@ margin:0 0 0 0;
     #uname,#pass,#pass2,#email,#r-email{
         width: 80%;
     }
+}
+
+/***********************profile-page*********************************************** */
+.profile-frame-container{
+    display: flex;
+    justify-content: center;
+    margin-top:25px
+
+}
+.pfp{
+    margin-right: 100px;
+}
+.profile-data h1{
+    margin-bottom: 5px;
 }
 
 /* ************************************Pruebas*********************************** */
