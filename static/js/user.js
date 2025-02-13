@@ -150,6 +150,7 @@ function getCookie(name) {
         const name = eqPos > -1 ? cookie.substring(0, eqPos).trim() : cookie.trim();
 
         // Eliminar la cookie configurando una fecha de expiración en el pasado
+        console.log(getCookie(`${name}`));
         document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
     }
 }
@@ -159,7 +160,7 @@ function checkIfLogged(){
     unameURL=document.querySelector(".login-register")
     if (getCookie("idToken") && getCookie("usrnm")){
         uname.textContent=getCookie("usrnm");
-        unameURL.href="../templates/profile.html"
+        unameURL.href="templates/profile.html"
         checkIfValid().then(isValid => {
             if (isValid) {
                 console.log("token valido");
@@ -176,7 +177,7 @@ function checkIfLogged(){
         }).then(res=>{
             if (res.ok){
                 uname.textContent=getCookie("usrnm");
-                unameURL.href="../../templates/profile.html"
+                unameURL.href="templates/profile.html"
                 return res;
             }
             throw new Error("No se ha podido refrescar el token");
