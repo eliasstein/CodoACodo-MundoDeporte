@@ -150,8 +150,9 @@ function getCookie(name) {
         const name = eqPos > -1 ? cookie.substring(0, eqPos).trim() : cookie.trim();
 
         // Eliminar la cookie configurando una fecha de expiración en el pasado
-        console.log(getCookie(`${name}`));
-        document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
+        // console.log(getCookie(`${name}`));
+        // document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
+        document.cookie=`${name}=;Max-Age=0;Path=/;SameSite=None;Secure;Partitioned;`
     }
 }
 
