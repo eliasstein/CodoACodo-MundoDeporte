@@ -4,7 +4,7 @@ const registerform = document.querySelector(".register-form");
 const profileframe= document.querySelector(".profile-frame")
 
 // const API_URL="http://127.0.0.1:8000";  //url de la api
-const API_URL="https://mundo-deportes-backend.vercel.app/"
+const API_URL="https://mundo-deportes-backend.vercel.app"
 
 if (loginform!=undefined){ 
     loginform.addEventListener('submit', (e)=>{
