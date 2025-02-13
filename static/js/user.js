@@ -159,7 +159,7 @@ function checkIfLogged(){
     unameURL=document.querySelector(".login-register")
     if (getCookie("idToken") && getCookie("usrnm")){
         uname.textContent=getCookie("usrnm");
-        unameURL.href="../../templates/profile.html"
+        unameURL.href="../templates/profile.html"
         checkIfValid().then(isValid => {
             if (isValid) {
                 console.log("token valido");
