@@ -38,7 +38,7 @@ if (loginform!=undefined){
                 confirmButtonText: "OK"
               }).then(result=>{
                 if(result.isConfirmed)
-                    document.location.href="/";
+                    document.location.href="/CodoACodo-MundoDeporte";
               });
         })
         .catch((error)=>{
@@ -89,7 +89,7 @@ if (registerform!=undefined){
                 confirmButtonText: "OK"
                 }).then(result=>{
                 if(result.isConfirmed)
-                    document.location.href="/";
+                    document.location.href="/CodoACodo-MundoDeporte";
                 });
             
         })
@@ -206,7 +206,7 @@ function logout(){
         confirmButtonText: "OK"
       }).then(result=>{
         if(result.isConfirmed)
-            document.location.href="/";
+            document.location.href="/CodoACodo-MundoDeporte";
       });
 
 }
