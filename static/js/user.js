@@ -29,16 +29,25 @@ if (loginform!=undefined){
                 console.log("logueado");
                 return res;
             }
+            else if(res.status=200){
+                return res.json();
+            }
             throw new Error('No se ha podido iniciar sesión');
       })
         .then(resp=>{
+            document.cookie=resp["usrnm"]
+            document.cookie=resp["localId"]
+            document.cookie=resp["idToken"]
+            if (resp["refreshToken"]!=undefined)
+                document.cookie=resp["refreshToken"]
+            console.log(resp["usrnm"])
             Swal.fire({
                 icon: "success",
                 text: "Se ha iniciado la sesión correctamente",
                 confirmButtonText: "OK"
               }).then(result=>{
                 if(result.isConfirmed)
-                    document.location.href="/CodoACodo-MundoDeporte";
+                    document.location.href="/";
               });
         })
         .catch((error)=>{
@@ -89,7 +98,7 @@ if (registerform!=undefined){
                 confirmButtonText: "OK"
                 }).then(result=>{
                 if(result.isConfirmed)
-                    document.location.href="/CodoACodo-MundoDeporte";
+                    document.location.href="/";
                 });
             
         })
@@ -206,7 +215,7 @@ function logout(){
         confirmButtonText: "OK"
       }).then(result=>{
         if(result.isConfirmed)
-            document.location.href="/CodoACodo-MundoDeporte";
+            document.location.href="/";
       });
 
 }
