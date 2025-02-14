@@ -197,9 +197,9 @@ function checkIfLogged() {   //Funcion que comprueba si el usuario se encuentra 
         if (window.location.href.includes("profile"))
             unameURL.href = ""          //modificamos la url para que en vez de mandarnos al login nos mande al perfil
         else if (window.location.href.includes("templates"))
-            unameURL.href = "profile.html"
+            unameURL.href = "/CodoACodo-MundoDeporte/profile.html"
         else {
-            unameURL.href = "templates/profile.html"          //modificamos la url para que en vez de mandarnos al login nos mande al perfil
+            unameURL.href = "/CodoACodo-MundoDeporte/templates/profile.html"          //modificamos la url para que en vez de mandarnos al login nos mande al perfil
         }
 
     }
@@ -224,9 +224,9 @@ function checkIfLogged() {   //Funcion que comprueba si el usuario se encuentra 
                 if (window.location.href.includes("profile"))
                     unameURL.href = ""          //modificamos la url para que en vez de mandarnos al login nos mande al perfil
                 else if (window.location.href.includes("templates"))
-                    unameURL.href = "profile.html"
+                    unameURL.href = "/CodoACodo-MundoDeporte/profile.html"
                 else
-                    unameURL.href = "templates/profile.html"          //modificamos la url para que en vez de mandarnos al login nos mande al perfil
+                    unameURL.href = "/CodoACodo-MundoDeporte/templates/profile.html"          //modificamos la url para que en vez de mandarnos al login nos mande al perfil
 
             })
     }
