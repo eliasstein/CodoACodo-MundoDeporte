@@ -230,6 +230,26 @@ margin:0 0 0 0;
     width:40px;
 }
 
+/***********************profile-page*********************************************** */
+.profile-frame-container{
+    display: flex;
+    justify-content: center;
+    margin-top:25px;
+    margin:25px 50px;
+    padding: 20px 50px;
+    background-color: gray;
+    border-radius: 20px;
+
+}
+.pfp{
+    margin-right: 100px;
+}
+.profile-data h1{
+    margin-bottom: 5px;
+}
+
+
+
 /********************************************Responsive***************************************/
 @media screen and (max-width:1050px){
 
@@ -283,20 +303,27 @@ margin:0 0 0 0;
     #uname,#pass,#pass2,#email,#r-email{
         width: 80%;
     }
+
+
+/***********************************Profile Page***************************************/
+
+    .pfp{
+        margin-right: 0;
+        width: 100px;
+        height: 100px;
+    }
+    .profile-frame-container{
+    flex-direction: column;
+    align-items: center;
+    }
+    .profile-data h1{
+        font-size: 18px;
+    }
+    .profile-data input{
+        width: 100px;
+    }
+
 }
 
-/***********************profile-page*********************************************** */
-.profile-frame-container{
-    display: flex;
-    justify-content: center;
-    margin-top:25px
-
-}
-.pfp{
-    margin-right: 100px;
-}
-.profile-data h1{
-    margin-bottom: 5px;
-}
 
 /* ************************************Pruebas*********************************** */
